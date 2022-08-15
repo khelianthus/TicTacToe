@@ -1,9 +1,9 @@
 # TIC-TAC-TOE
 
-[] create playing field, position 0-8
+[x] create playing field, position 0-8
 [] randomize who starts to play
 [x] choose if you're "x" or "o" 
-[] create 9 spots to fill
+[x] create 9 spots to fill
 [] check if each spot is empty before filling it in
 [] check if there's a win after a win-able connection has been formed
 [] give win to winner
@@ -14,7 +14,7 @@
 [x] player, computer
 [x] player score, comptuer score
 [] games played
-[] array for playing field
+[x] array for playing field
 [] possibly adding player 2?
 
 # METHODS/FUNCTIONS

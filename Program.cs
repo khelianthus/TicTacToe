@@ -1,15 +1,13 @@
-﻿// See https://aka.ms/new-console-template for more information
-using System;
+﻿using System;
 
 namespace TicTacToe {
-
     public class Program
     {
-        public static void Main(string[ args]){
+        public static void Main(string[] args){
 
         //Create array for the playingfield consisting of 9 places
         string[] ticTacToeFieldArray = new string[9] {"-","-","-","-","-","-","-","-","-"};
-        string playfield = "";
+        //string playfield = "";
         //Store players score.
         int playerXScore = 0;
         int playerOScore = 0;
@@ -17,19 +15,24 @@ namespace TicTacToe {
         string? playerX = "X";
         string? playerO = "O";
 
-        //Start.newGameStart();
+        //Call start function.
+        Start();
+        //Call board function.
+        Board();
+
+    void Start(){
 
         //Need to use for ReadKey to work properly, and a name for variable
         ConsoleKeyInfo userChoice;
         Console.WriteLine("Welcome to a game of Tic-Tac-Toe!\n");
         Console.ReadLine();
         Console.WriteLine("What is your name?: ");
+        //Need questionmark because input can be null but should be sting
         string? playerName = Console.ReadLine();
         Console.Clear();
         Console.WriteLine($"Will {playerName} be X or O?:");
         //insert the choice in variable.
         userChoice = Console.ReadKey();
-    
 
         if (userChoice.Key == ConsoleKey.X){
             Console.WriteLine("You chose X!");
@@ -42,14 +45,11 @@ namespace TicTacToe {
         else {
             Console.WriteLine("Please select between X or O.");
         }
-
         Console.Clear();
+}
 
-        //Call board function.
-        Board();
-
-    public static void Board()
-    {
+    void Board(){
+        //System.IndexOutOfRangeException: Index was outside the bounds of the array, line 60, line 21
        Console.WriteLine("     |     |      ");
        Console.WriteLine("  {0}  |  {1}  |  {2}", ticTacToeFieldArray[1], ticTacToeFieldArray[2], ticTacToeFieldArray[3]);
        Console.WriteLine("_____|_____|_____ ");
