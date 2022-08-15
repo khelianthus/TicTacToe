@@ -49,15 +49,14 @@ namespace TicTacToe {
 }
 
     void Board(){
-        //System.IndexOutOfRangeException: Index was outside the bounds of the array, line 60, line 21
        Console.WriteLine("     |     |      ");
-       Console.WriteLine("  {0}  |  {1}  |  {2}", ticTacToeFieldArray[1], ticTacToeFieldArray[2], ticTacToeFieldArray[3]);
+       Console.WriteLine("  {0}  |  {1}  |  {2}", ticTacToeFieldArray[0], ticTacToeFieldArray[1], ticTacToeFieldArray[2]);
        Console.WriteLine("_____|_____|_____ ");
        Console.WriteLine("     |     |      ");
-       Console.WriteLine("  {0}  |  {1}  |  {2}", ticTacToeFieldArray[4], ticTacToeFieldArray[5], ticTacToeFieldArray[6]);
+       Console.WriteLine("  {0}  |  {1}  |  {2}", ticTacToeFieldArray[3], ticTacToeFieldArray[4], ticTacToeFieldArray[5]);
        Console.WriteLine("_____|_____|_____ ");
        Console.WriteLine("     |     |      ");
-       Console.WriteLine("  {0}  |  {1}  |  {2}", ticTacToeFieldArray[7], ticTacToeFieldArray[8], ticTacToeFieldArray[9]);
+       Console.WriteLine("  {0}  |  {1}  |  {2}", ticTacToeFieldArray[6], ticTacToeFieldArray[7], ticTacToeFieldArray[8]);
        Console.WriteLine("     |     |      ");
     }
 
