@@ -11,11 +11,10 @@
 [] decide who winner and looser is or if there's a tie
 
 # VARIABLES
-[x] player, computer
-[x] player score, comptuer score
+[x] player, player 2
+[x] player score, player2 score
 [] games played
 [x] array for playing field
-[] possibly adding player 2?
 
 # METHODS/FUNCTIONS
 [] players selection
@@ -28,7 +27,7 @@
 [] ask play again to run it again, saves score
 
 # DISPLAY
-[] playing field in console
+[x] playing field in console
 
 # PLAYER INTERACTION
 [] being able to move by keyboard on the field
